@@ -1,0 +1,27 @@
+================================================================================
+                                                               *stackmap.nvim*
+
+This plugin helps you to push a bunch of maps on some event, and then
+pop them when you're done with that event. See examples below:
+
+
+                                                             *stackmap.push()*
+stackmap.push({name}, {mode}, {mappings})
+
+    Push the {name} mappings for a particular {mode}. Mappings should be a key
+    value pair of { lhs = rhs, ... }. >
+
+        stackmap.push("example", "n", {
+            ["<space>st"] = "echo 'Wow, this got mapped!'",
+            ...
+        })
+
+<
+                                                              *stackmap.pop()*
+stackmap.pop({name}, {mode})
+
+    Pop the {name} mappings. Restores original mappings from before calling
+    |stackmap.push()|
+
+
+ vim:tw=78:ts=8:ft=help:norl:
