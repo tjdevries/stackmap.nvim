@@ -2,4 +2,8 @@
 
 Stacks of Maps
 
-![stack of maps](./stack-of-maps.jpeg)
+```
+╰ stack-of-maps.jpeg
+╰ stack-of-maps-2.jpeg
+╰ stack-of-maps-3.jpeg
+```
